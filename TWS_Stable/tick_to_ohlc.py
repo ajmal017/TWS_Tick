@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 from datetime import *
 
 #read file
-file_name = "EUR.USD 28.05.2019 11'25'50"
-df = pd.read_csv("data/tick/" + str(file_name) + ".txt", names=['Time','Bid', 'Bidsize','Ask', 'Asksize', 'Midpoint'], delim_whitespace=True)
+file_name = "EUR.USD 06.07.2018 11'43'05"
+df = pd.read_csv("../data/tick/" + str(file_name) + ".txt", names=['Time','Bid', 'Bidsize','Ask', 'Asksize', 'Midpoint'], delim_whitespace=True)
 
 #format file for pandas ohlc
 df.drop(df.index[0], inplace=True)
@@ -32,8 +32,8 @@ ax.autoscale_view()
 plt.setp(plt.gca().get_xticklabels(), rotation=45, horizontalalignment='right')
 
 #save & show plot
-plt.savefig("data/ohlc/img/" + str(file_name) +" ohlc 5min.png")
+plt.savefig("../data/ohlc/img/" + str(file_name) +" ohlc 5min.png")
 plt.show()
 
 #save converted file
-ohlc.to_csv("data/ohlc/" + str(file_name) + " ohlc 5min.txt", sep = ",")
+ohlc.to_csv("../data/ohlc/" + str(file_name) + " ohlc 5min.txt", sep = ",")

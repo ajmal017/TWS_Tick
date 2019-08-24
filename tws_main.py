@@ -184,9 +184,9 @@ class Application(Frame):
 		global con, status, writer
 
 		#create csv
-		zeit = time.strftime("%d.%m.%Y %H'%M'%S")
+		zeit = time.strftime("%d-%m-%Y_%H:%M:%S")
 		security = varSymbol.get()
-		myFile = "C:/Users/Tobias/Documents/Coding/data/EUR." + str(security) + " " + str(zeit) +  ".txt"
+		myFile = "C:/Users/Tobias/Documents/Coding/TWS_Tick/data/EUR." + str(security) + "_" + str(zeit) +  ".txt"
 
 		#create csv header
 		csvheader= ["Time","Bid","Bidsize","Ask","Asksize"]
