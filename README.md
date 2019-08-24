@@ -1,9 +1,6 @@
 # Provides tick data via the tws api
-tws_tick.py
-liefert ein csv mit tick quotes vom gewünschten kontrakt über die tws api
-EUR.USD 28.05.2019 11'25'50.txt
+## tws_tick_main.py
+Provides tick data via the TWS API.
 
-tick_to_ohlc.py
-wandelt die daten von tws_tick.py zu open-high-low-close daten um und speichert anschließend ein csv und png
-EUR.USD 28.05.2019 11'25'50 ohlc 5min.txt
-EUR.USD 28.05.2019 11'25'50 ohlc 5min.png
+## tick_to_ohlc.py
+Converts tick data to OHLC data, generates chart image.
