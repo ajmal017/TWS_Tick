@@ -157,7 +157,7 @@ class Application(Frame):
 		#create csv
 		init_time = time.strftime("%d-%m-%Y_%H'%M'%S")
 		security = varSymbol.get()
-		myFile =  "data/EUR." + str(security) + "_" + str(init_time) +  ".txt"
+		myFile =  "data/Tick/EUR." + str(security) + "_" + str(init_time) +  ".txt"
 
 		#create csv header
 		csvheader= ["Time","Bid","Bidsize","Ask","Asksize"]

@@ -1,1 +1,4 @@
-data/
+.gitignore
+/data/Miscellaneous
+/data/OHLC
+/data/Tick
